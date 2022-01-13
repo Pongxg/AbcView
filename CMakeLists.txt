@@ -1,0 +1,10 @@
+cmake_minimum_required (VERSION 3.9)
+get_filename_component(PROJECT_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+project (${PROJECT_NAME})
+find_path(GLEW_DIR REQUIRED)
+ADD_SUBDIRECTORY(Imath)
+ADD_SUBDIRECTORY(alembic)
+ADD_SUBDIRECTORY(freeglut)
+ADD_SUBDIRECTORY(AbcOpenGL)
+ADD_SUBDIRECTORY(src)
+
